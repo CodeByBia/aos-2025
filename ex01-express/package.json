@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src index.js"
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [
     "node",
-    "express", 
+    "express",
     "postgress"
   ],
   "author": "Beatriz Martins",
   "email": "beatrizmartins3252@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
+    "dotenv": "^17.2.1",
+    "nodemon": "^3.1.10"
+  }
 }
